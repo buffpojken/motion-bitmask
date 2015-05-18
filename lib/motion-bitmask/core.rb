@@ -17,6 +17,16 @@ class Bitmask
 		@field & (1 << @values.index(value)**2) > 0
 	end
 
+	def values
+		return @values.reject do |value|
+			!set?(value)
+		end
+	end
+
+	def allowed_values
+		@values
+	end
+
 	private
 
 	def validate_value(val)
