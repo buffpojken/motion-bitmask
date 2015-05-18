@@ -1,3 +1,3 @@
-## Motion-bitmask
+# MotionBitmask
 
 This will soon be updated.
