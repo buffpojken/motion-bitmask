@@ -4,4 +4,5 @@ Gem::Specification.new do |s|
   s.summary     = "Simple implementation of bitmasks with a Rubyesque interface"
   s.description = "Sample gem"
   s.authors     = ["buffpojken"]
+  s.files       = `git ls-files`.split($/)
 end
