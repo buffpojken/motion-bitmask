@@ -46,6 +46,18 @@ describe 'Bitmask' do
 			@mask << :more_test
 			@mask.values.should.equal([:test, :more_test])
 		end
+	end
+
+	describe 'storing values' do 
+		it 'should support a single initial value' do 
+			mask = Bitmask.new(1, [:test, :more_test, :even_more_test])
+			mask.set?(:test).should.equal(true)
+		end
+
+		it 'should support multiple initial values' do 
+			mask = Bitmask.new(17, [:test, :more_test, :even_more_test])
+			mask.values.should.equal([:test, :even_more_test])
+		end
 
 	end
 
