@@ -27,6 +27,10 @@ class Bitmask
 		@values
 	end
 
+	def raw_value
+		@field
+	end
+
 	private
 
 	def validate_value(val)
