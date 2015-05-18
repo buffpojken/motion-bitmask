@@ -1,10 +1,10 @@
 module Bitmask
 
 	def self.included(base)
-		base.send :include, Instance
+		base.send :extend, ClassMethods
 	end
 
-	module Instance
+	module ClassMethods
 
 		def monkey
 			"ninja"
